@@ -7,32 +7,36 @@
     <title>WebStudio - Портфолио</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" >
     <link rel="stylesheet" href="./css/modern-normalize.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
   
 </head>
 <body>
     <header class="header">
         <div class="container">
-        <nav class="nav">
-        <a href="index.html" class="logo">Web<span class="logo-black-color">Studio</span></a>
-        <ul class="nav-list">
-        <li class="nav-links "><a href="index.html" class="nav-links-item">Студия</a></li>
-        <li class="nav-links"><a href="portfolio.html" class="nav-links-item current">Портфолио</a></li>
-        <li class="nav-links"><a href="" class="nav-links-item">Контакты</a></li>
-        </ul>
-        </nav>
-        <ul class="auth-list">
-        <li class="auth-links">
-            <a href="mailto:info@devsudio.com" class="auth-links-item">
-                <svg class="auth-links-icons" width="16" height="12"><use href="./images/icons.svg#icon-envelope-1"></use>
-                </svg>
-                info@devsudio.com</a></li>
-        <li class="auth-links"><a href="tel.:+380961111111" class="auth-links-item">
-            <svg class="auth-links-icons" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-            </svg>
-            +38096111 11 11</a></li>
-        </ul>
+            <nav class="header__nav">
+                <a href="index.html" class="logo">Web<span class="logo header__logo">Studio</span></a>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Студия</a></li>
+                    <li class="nav__item"><a href="portfolio.html" class="nav__link nav__link--active">Портфолио</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="auth__list">
+                <li class="auth__item">
+                    <a href="mailto:info@devsudio.com" class="auth__link">
+                        <svg class="auth__icon" width="16" height="12">
+                            <use href="./images/icons.svg#icon-envelope-1"></use>
+                        </svg>
+                        info@devsudio.com</a>
+                </li>
+                <li class="auth__item">
+                    <a href="tel.:+380961111111" class="auth__link">
+                        <svg class="auth__icon" width="10" height="16">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>
+                        +38096111 11 11</a>
+                </li>
+            </ul>
         </div>
     </header>
     <main>
