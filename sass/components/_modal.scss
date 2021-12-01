@@ -1,7 +1,3 @@
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
 .backdrop {
   position: fixed;
   display: flex;
@@ -10,6 +6,15 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .modal {
@@ -62,7 +67,7 @@
 }
 
 .form__input {
-  font-family: Roboto;
+  font-family: inherit;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -74,7 +79,22 @@
   display: block;
   width: 100%;
   box-sizing: border-box;
-  padding: 11px 12px 11px 42px;
+  padding: 12px 12px 12px 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transform: border;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.form__input:focus-visible {
+  border: 1px solid $accent-color;
+  outline: none;
+}
+.form__input:focus-visible + .form__icon {
+  fill: $accent-color;
 }
 
 .form__icon {
@@ -83,6 +103,10 @@
   left: 12px;
   width: 18px;
   height: 18px;
+
+  transform: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .textarea {
@@ -174,6 +198,13 @@
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: $primary-white-color;
+
+  &:hover,
+  &:focus {
+    .close__icon {
+      fill: $accent-color;
+    }
+  }
 }
 .close__icon {
   position: absolute;
@@ -183,4 +214,7 @@
 
   width: 11px;
   height: 11px;
+  transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }

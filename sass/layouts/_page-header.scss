@@ -1,5 +1,8 @@
 .header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+}
+.header__container {
+  display: flex;
 }
 .header__nav {
   display: inline-flex;

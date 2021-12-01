@@ -4,8 +4,10 @@
   padding-bottom: 60px;
 }
 
-.container.footer__container {
+.footer__container {
+  display: flex;
   align-items: baseline;
+  justify-content: space-around;
 }
 
 .contacts {
@@ -13,9 +15,9 @@
 
 .footer__logo {
   margin-bottom: 20px;
-  display: block;
+  display: inline-block;
 }
-.footer__logo--white {
+.logo.footer__logo--white {
   color: $primary-white-color;
 }
 
@@ -37,8 +39,8 @@
   list-style: none;
 }
 
-.contacts__item + .contacts__item {
-  margin-top: 9px;
+.contacts__item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .contacts__link {
@@ -99,7 +101,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
-  &focus {
+  &:focus {
     background-color: $accent-color;
   }
 }
@@ -111,7 +113,6 @@
 }
 
 .mailing {
-  margin-left: auto;
 }
 
 .mailing__title {

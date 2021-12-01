@@ -10,6 +10,13 @@
 
 .team__title {
   margin-bottom: 50px;
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $filter-item-text-color;
 }
 
 .team__list {
@@ -33,7 +40,7 @@
 
 .member__meta {
   padding-top: 30px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
   padding-left: 32px;
   padding-right: 32px;
 }
