@@ -1162,7 +1162,7 @@ img {
 .policy__input:checked + .policy__icon {
   fill: #2196f3;
   background-color: #2196f3;
-  background-image: url(../../images/Vector1.svg);
+  background-image: url(../images/Vector1.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
